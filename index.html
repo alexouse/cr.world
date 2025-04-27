@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание мира</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Добро пожаловать в создание мира!</h1>
+        <form id="world-form">
+            <label for="world-name">Название мира:</label>
+            <input type="text" id="world-name" name="world-name" required>
+            <label for="world-description">Описание мира:</label>
+            <textarea id="world-description" name="world-description" required></textarea>
+            <button type="submit">Создать мир</button>
+        </form>
+    </div>
+
+    <div id="game-screen" style="display:none;">
+        <h2>Мой мир</h2>
+        <div id="world-info"></div>
+        <div id="question-box"></div>
+        <button id="next-question" style="display:none;">Продолжить</button>
+        <div id="visualization"></div>
+    </div>
+
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
